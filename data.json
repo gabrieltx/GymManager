@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "http://google.com",
+      "birth": 915235200000,
+      "created_at": 1587652048267,
+      "Id": 1,
+      "name": "Ana",
+      "services": "Yoga",
+      "gender": "F"
+    },
+    {
+      "avatar_url": "http://google.com",
+      "birth": 689558400000,
+      "created_at": 1587652063334,
+      "Id": 2,
+      "name": "Gabriel Miranda Teixeira",
+      "services": "Crossfit, Yoga",
+      "gender": "M"
+    }
+  ]
+}

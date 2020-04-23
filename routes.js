@@ -14,6 +14,10 @@ routes.get('/instructors/create', function(req, res){
     return res.render('instructors/create')
 })
 
+routes.get('/instructors/:Id', instructors.show)
+
+routes.get('/instructors/:Id/edit', instructors.edit)
+
 //Validacao
 
 routes.post("/instructors", instructors.post)
