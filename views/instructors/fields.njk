@@ -4,6 +4,7 @@
         <input type="url"
             name="avatar_url"
             placeholder="http://"
+            value="{{ instructor.avatar_url}}"
         >
     </div>
 </div>
@@ -14,6 +15,7 @@
         <input type="text"
                 name="name"
                 placeholder="Instructor name"
+                value = "{{ instructor.name }}"
         >
     </div>
 </div>
@@ -22,7 +24,9 @@
     <div>Birth date</div>
     <div>
         <input type="date"
-        name="birth">
+        name="birth"
+        value = "{{ instructor.birth }}">
+        
     </div>
 </div>
 
@@ -30,14 +34,23 @@
     <div>Gender</div>
     <div>
         <span>
-        <input type="radio"
-        name="gender"
-        value="M">Male
+            <input 
+                type="radio"
+                name="gender"
+                value="M" 
+                {% if instructor.gender == 'M' %}
+                checked
+                {% endif %}
+                >Male    
         </span>
         <span>
-        <input type="radio"
-        name="gender"
-        value="F" checked>Female
+            <input type="radio"
+                name="gender"
+                value="F" 
+                {% if instructor.gender == 'F' %}
+                checked
+                {% endif %}
+                >Female    
         </span>
     </div>
 </div>
@@ -47,7 +60,8 @@
     <div>
         <input type="text"
         name="services"
-        placeholder="Space the services with comma">
+        placeholder="Space the services with comma"
+        value = "{{ instructor.services }}">
     </div>
 </div>
 
