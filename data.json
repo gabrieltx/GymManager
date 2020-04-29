@@ -1,4 +1,14 @@
 {
+  "members": [
+    {
+      "Id": 1,
+      "avatar_url": "https://pbs.twimg.com/profile_images/1126358830445662208/IPh6PTBx.jpg",
+      "name": "Renato Ferreira",
+      "birth": 966556800000,
+      "gender": "M",
+      "created_at": 1588109385915
+    }
+  ],
   "instructors": [
     {
       "Id": 2,
@@ -13,9 +23,9 @@
       "Id": 3,
       "avatar_url": "https://pbs.twimg.com/profile_images/1022315277139075072/AW-rdWlG.jpg",
       "name": "Diego Farias",
-      "birth": 620438400000,
+      "birth": null,
       "gender": "M",
-      "services": "Crossfit, Musculação",
+      "services": "Crossfit, Musculação, Muai Thai",
       "created_at": 1588016746711
     },
     {

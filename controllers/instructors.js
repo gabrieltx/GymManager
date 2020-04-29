@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data = require('./data.json')
-const { age, date } = require('./utility')
+const data = require('../data.json')
+const { age, date } = require('../utility')
 
 
 exports.index = function(req, res){
@@ -55,6 +55,10 @@ exports.post = function(req, res){
         if (err) return res.send('Write file error')
         return res.redirect("/instructors")
     })
+}
+
+exports.create = function(req, res){
+    return res.render('instructors/create')
 }
 
 exports.edit = function(req, res){
