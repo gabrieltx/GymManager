@@ -33,25 +33,21 @@ exports.post = function(req, res){
             return res.send('Please fill all fields')       
     }
 
-    let {avatar_url, birth, name, services, gender} = req.body
-
-    birth = Date.parse(birth)
-    const created_at = Date.now()
+    birth = Date.parse(req.body.birth)
+    const imc = Math.round(Number((req.body.weight/(req.body.height * req.body.height))*10000))
+    
     const Id = Number(data.members.length + 1)
 
     data.members.push({
         Id,
-        avatar_url,
-        name,
+        ...req.body,
         birth,
-        gender,
-        services,
-        created_at,
+        imc
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if (err) return res.send('Write file error')
-        return res.redirect("/members")
+        return res.redirect(`/members/${Id}`)
     })
 }
 
@@ -96,6 +92,7 @@ exports.put = function(req, res) {
         ...foundMember,
         ...req.body,
         birth: Date.parse(req.body.birth),
+        imc: Math.round(Number((req.body.weight/(req.body.height * req.body.height))*10000)),
         Id: Number(req.body.Id)
     }
 

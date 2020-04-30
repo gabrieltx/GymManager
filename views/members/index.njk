@@ -8,7 +8,9 @@
         <thead>
             <tr>
                 <th>Member</th>
-                <th>Specialty</th>
+                <th>Email</th>
+                <th>BMI</th>
+                <th>Blood Type</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -18,9 +20,9 @@
                 <td>
                 <span style="background-image: url({{member.avatar_url}})"></span>
                 {{member.name}}</td>
-                <td>
-                    <span>{{member.services}}</span>
-                </td>
+                <td>{{member.email}}</td>
+                <td>{{member.imc}}</td>
+                <td>{{member.blood}}</td>
                 <td><a href="/members/{{member.Id}}">Show</a></td>
             </tr>
             {% endfor %}

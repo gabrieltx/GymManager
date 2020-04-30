@@ -4,9 +4,37 @@
       "Id": 1,
       "avatar_url": "https://pbs.twimg.com/profile_images/1126358830445662208/IPh6PTBx.jpg",
       "name": "Renato Ferreira",
-      "birth": 966556800000,
+      "email": "renatoferreira@aol.com",
+      "birth": 649555200000,
       "gender": "M",
-      "created_at": 1588109385915
+      "blood": "O+",
+      "weight": "79",
+      "height": "173",
+      "imc": 26
+    },
+    {
+      "Id": 2,
+      "avatar_url": "https://pbs.twimg.com/profile_images/874196000747003905/N8kxcjRw.jpg",
+      "name": "Fernanda Simas",
+      "email": "frsimas@uol.com",
+      "birth": null,
+      "gender": "F",
+      "blood": "B+",
+      "weight": "55",
+      "height": "164",
+      "imc": 20
+    },
+    {
+      "Id": 3,
+      "avatar_url": "https://images.pexels.com/photos/576924/pexels-photo-576924.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Jonas Carvalho",
+      "email": "carvjonas@gmail.com",
+      "birth": null,
+      "gender": "M",
+      "blood": "AB+",
+      "weight": "82",
+      "height": "173",
+      "imc": 27
     }
   ],
   "instructors": [
@@ -36,15 +64,6 @@
       "gender": "M",
       "services": "Yoga, Musculação, Funcional",
       "created_at": 1588016800759
-    },
-    {
-      "Id": 5,
-      "avatar_url": "https://pbs.twimg.com/profile_images/681161994641145858/93aChDW6.jpg",
-      "name": "Natalia Ramos",
-      "birth": 710812800000,
-      "gender": "F",
-      "services": "Yoga, Funcional",
-      "created_at": 1588023124933
     }
   ]
 }

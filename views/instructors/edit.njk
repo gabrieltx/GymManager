@@ -28,14 +28,17 @@
             <button type="submit">Delete</button>
         </form>
 
-    </section>
-
-    
+        <script>
+            const formDelete = document.querySelector("#form-delete")
+            formDelete.addEventListener("submit", function(event){
+                const confirmation = confirm("Delete Member?")
+                if(!confirmation) {
+                    event.preventDefault()
+                }
+            })
+        </script>
         
-    
-
-    
-
+    </section>
 </div>
 
 

@@ -12,29 +12,33 @@
 
     <section class="details">
 
-        <form method="POST" action="/instructors?_method=PUT">
+        <form method="POST" action="/members?_method=PUT">
             
-            <h3>Edit Instructor</h3>
+            <h3>Edit Member</h3>
 
-            {% include 'instructors/fields.njk'%}
+            {% include 'members/fields.njk'%}
 
-            <input type="hidden" name="Id" value={{instructor.Id}}>
+            <input type="hidden" name="Id" value={{member.Id}}>
 
         </form>
 
-        <form id="form-delete" action="/instructors?_method=DELETE" method="post">
-            <input type="hidden" name="Id" value="{{instructor.Id}}">
+        <form id="form-delete" action="/members?_method=DELETE" method="post">
+            <input type="hidden" name="Id" value="{{member.Id}}">
 
             <button type="submit">Delete</button>
         </form>
 
+        <script>
+            const formDelete = document.querySelector("#form-delete")
+            formDelete.addEventListener("submit", function(event){
+                const confirmation = confirm("Delete Member?")
+                if(!confirmation) {
+                    event.preventDefault()
+                }
+            })
+        </script>
+
     </section>
-
-    
-        
-    
-
-    
 
 </div>
 

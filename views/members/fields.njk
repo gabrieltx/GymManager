@@ -24,7 +24,7 @@
     <div>
         <input type="email"
                 name="email"
-                value = "{{ member.name }}"
+                value = "{{ member.email }}"
         >
     </div>
 </div>
@@ -68,14 +68,14 @@
     <div>Blood type</div>
     <div>
         <select name="blood">
-        <option value="A1">A+</option>
-        <option value="A0">A-</option>
-        <option value="B1">B+</option>
-        <option value="B0">B-</option>
-        <option value="AB1">AB+</option>
-        <option value="AB0">AB-</option>
-        <option value="O1">O+</option>
-        <option value="O0">O-</option>
+        <option value="A+" {% if member.blood == "A+"%}selected{% endif %}>A+</option>
+        <option value="A-" {% if member.blood == "A-"%}selected{% endif %}>A-</option>
+        <option value="B+" {% if member.blood == "B+"%}selected{% endif %}>B+</option>
+        <option value="B-" {% if member.blood == "B-"%}selected{% endif %}>B-</option>
+        <option value="AB+" {% if member.blood == "AB+"%}selected{% endif %}>AB+</option>
+        <option value="AB-" {% if member.blood == "AB-"%}selected{% endif %}>AB-</option>
+        <option value="O+" {% if member.blood == "O+"%}selected{% endif %}>O+</option>
+        <option value="O-" {% if member.blood == "O-"%}selected{% endif %}>O-</option>
         </select>
     </div>
 </div>

@@ -8,8 +8,13 @@
         <h3>Details</h3>
 
         <div class="item">
-            <div>member</div>
+            <div>Member</div>
             <div>{{member.name}}</div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div>{{member.email}}</div>
         </div>
 
         <div class="item">
@@ -23,17 +28,23 @@
         </div>
 
         <div class="item">
-            <div>Specialty</div>
-            <div>
-                {% for service in member.services %}
-                <span>{{service}}</span>
-                {% endfor %}
-            </div>
+            <div>Blood Type</div>
+            <div>{{member.blood}}</div>
         </div>
 
-        <div class="item">
-            <div>Since</div>
-            <div>{{member.created_at}}</div>
+          <div class="item">
+            <div>Weight (kg)</div>
+            <div>{{member.weight}}</div>
+        </div>
+
+          <div class="item">
+            <div>Height (cm)</div>
+            <div>{{member.height}}</div>
+        </div>
+
+          <div class="item">
+            <div>BMI</div>
+            <div>{{member.imc}}</div>
         </div>
 
         <a href="/members/{{member.Id}}/edit" class="button">Editar</a>
